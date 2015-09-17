@@ -1,4 +1,4 @@
-# Delightful rest client for c#
+# Delighted rest client for c#
 
 ## Installation
 ```
