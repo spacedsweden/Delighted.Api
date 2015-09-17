@@ -53,7 +53,7 @@
   <ItemGroup>
     <Compile Include="Client.cs" />
     <Compile Include="DelightedData\AddResult.cs" />
-    <Compile Include="DelightedData\PersonResponse.cs" />
+    <Compile Include="DelightedData\Person.cs" />
     <Compile Include="HttpHelpers.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

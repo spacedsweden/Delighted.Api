@@ -1,5 +1,10 @@
 # Delightful rest client for c#
 
+## Installation
+```
+Install-Package Delighted.Api
+```
+
 The process involves 2 steps:
 1.Add the person  
 2.Add the response(s) for that person via 
