@@ -1,8 +1,13 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using Newtonsoft.Json;
 
 namespace Delighted.Api.DelightedData {
+
     public class AddResult {
+        public AddResult() {
+            CreatedAt = (Int64)(DateTime.UtcNow.Subtract(new DateTime(1970, 1, 1))).TotalSeconds;
+        }
         [JsonProperty("id", DefaultValueHandling = DefaultValueHandling.Ignore,
             NullValueHandling = NullValueHandling.Ignore)]
         public int? Id { get; set; }
@@ -24,7 +29,7 @@ namespace Delighted.Api.DelightedData {
 
         [JsonProperty("created_at", DefaultValueHandling = DefaultValueHandling.Ignore,
             NullValueHandling = NullValueHandling.Ignore)]
-        public string CreatedAt { get; set; }
+        public Int64 CreatedAt { get; set; }
 
         [JsonProperty("person_properties", DefaultValueHandling = DefaultValueHandling.Ignore,
             NullValueHandling = NullValueHandling.Ignore)]
